@@ -14,7 +14,7 @@ defmodule Locations do
     locations = File.stream!(file)
     |> CSV.decode(separator: ?\t)
     |> Enum.map fn location ->
-      
+
       keys = [
         :country_code,
         :postal_code,
